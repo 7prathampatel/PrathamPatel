@@ -9,12 +9,12 @@ export default defineConfig({
   publicDir: 'public',
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'public/src')
+      '@': resolve(__dirname, 'src')
     }
   },
   build: {
     outDir: 'dist',
     target: 'esnext',
-    modulePreload: false
+    emptyOutDir: true
   }
 })
